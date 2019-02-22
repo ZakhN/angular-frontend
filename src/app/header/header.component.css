@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+
+header {
+  color: aliceblue;
+  height: auto;
+  margin: auto;
+  font-size: 30px;
+  font-stretch: expanded;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.flex-container {
+  display: flex;
+  align-content: center;
+}

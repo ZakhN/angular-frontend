@@ -1,36 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
-
-.header {
-    color: aliceblue;
-    height: 100px;
-    margin: auto;
-    font-size: 50px;
-    font-stretch: expanded;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    font-family: 'Bungee Shade', cursive;
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%
 }
-
-.content {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.sidebar {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 30.7% 67%;
-    grid-gap: 40px;
-}
-
-
