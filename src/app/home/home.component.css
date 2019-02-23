@@ -1,16 +1,17 @@
-.flex-container {
-  display: flex;
-  justify-content: flex-start;
+.home-container {
+  border: #fff;
+  border: 4px;
+  height: 100%;
 }
+
 .card {
-    background: #fff;
-    border-radius: 9px;
-    display: inline-block;
-    height: 575px;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    padding: 10px;
+  background: #fff;
+  border-radius: 9px;
+  /*display: inline-block;*/
+  margin: auto;
+  position: relative;
+  width: 100%;
+  padding: 10px;
 }
 /*
 .card-5:hover {
@@ -21,10 +22,12 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   margin: 20px;
   width: 20%;
+  height: 100%;
 }
 
 .card-4{
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   width: 80%;
   margin: 20px;
+  height: 100%
 }
