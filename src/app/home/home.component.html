@@ -2,9 +2,24 @@
 <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
 
 <div class="home-container" fxLayout="row" fxLayoutAlign="space-around center">
-  <div class="card card-5" fxLayout="row" fxLayoutAlign="center center" ></div>
-  <div class="card card-4" fxLayout="row" fxLayoutAlign="center center" ><canvas id="line" ></canvas></div>
+  <div class="side-area card" fxLayout="column" fxLayoutAlign="center start" >
+    <h1>
+      WebSockets Example Current value:{{data}}
+    </h1>
+    <button (click)="send()">send</button>
+    <button (click)="connect()">connect</button>
+    <input [(ngModel)]="text">
+    {{text}}
+    {{chartData[0].data}}
+  </div>
+  <div class="chart card" fxLayout="row" fxLayoutAlign="center center" > <canvas
+    baseChart
+    [chartType]="'line'"
+    [datasets]="chartData"
+    [labels]="labels"
+    [options]="chartOptions"
+    [legend]="true"
+    [colors]="colors"
+    (chartClick)="onChartClick($event)">
+</canvas></div>
 <div>
-<!--
-  <div class="comp">FFFFFFFFFFFFFFFFF</div>
--->

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LiveChartService } from './live-chart.service';
+import { DataFetch } from './dataFetch.service';
 
-describe('LiveChartService', () => {
+describe('DataFetch', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: LiveChartService = TestBed.get(LiveChartService);
+    const service: DataFetch = TestBed.get(DataFetch);
     expect(service).toBeTruthy();
   });
 });
